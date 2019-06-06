@@ -1,0 +1,15 @@
+.background{
+	-fx-background-color: white;
+}
+
+.button{
+	-fx-text-fill: #fff;
+	-fx-cursor: hand;
+	-fx-background-insets: 0, 1;
+	-fx-border-width: 0;
+	-fx-background-color: #e2185b;
+	-fx-background-radius: 10px;
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;
+	-fx-padding: 0 30 0 30;
+}

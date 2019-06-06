@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="300.0" stylesheets="@styles/sidemenu.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.accounting.view.MainSideMenuController">
+   <children>
+      <StackPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="300.0" styleClass="background" StackPane.alignment="TOP_CENTER" />
+            <VBox maxHeight="1.7976931348623157E308">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="300.0">
+                     <children>
+                        <Circle fill="DODGERBLUE" onMouseClicked="#openUserSettings" radius="80.0" stroke="BLACK" strokeType="INSIDE" styleClass="picture-frame" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="70.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Circle>
+                        <VBox maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="5.0">
+                           <children>
+                              <Label fx:id="firstName" alignment="CENTER" maxWidth="-Infinity" prefWidth="300.0" styleClass="name" text="First Name" />
+                              <Label fx:id="lastName" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="300.0" styleClass="name" text="Very Long Last Name" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <StackPane VBox.vgrow="ALWAYS">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Region fx:id="secondFlowPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="245.0" StackPane.alignment="TOP_CENTER">
+                                 <styleClass>
+                                    <String fx:value="third-sheet" />
+                                    <String fx:value="sheet" />
+                                 </styleClass>
+                              </Region>
+                              <Region fx:id="firstFlowPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="274.0" StackPane.alignment="TOP_CENTER">
+                                 <StackPane.margin>
+                                    <Insets top="6.0" />
+                                 </StackPane.margin>
+                                 <styleClass>
+                                    <String fx:value="second-sheet" />
+                                    <String fx:value="sheet" />
+                                 </styleClass>
+                              </Region>
+                           </children>
+                        </StackPane>
+                        <VBox maxHeight="1.7976931348623157E308">
+                           <children>
+                              <VBox fx:id="buttonContainerVBox" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <HBox fx:id="homeWrapperStackPane" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#openHomePage" prefHeight="50.0" prefWidth="300.0">
+                                       <children>
+                                          <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="44.0" />
+                                          <StackPane alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="256.0">
+                                             <children>
+                                                <Label fx:id="homeButton" prefHeight="50.0" prefWidth="256.0" styleClass="side-menu-buttons" text="Label" />
+                                                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="256.0" styleClass="bottom-line" />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="3.0" top="3.0" />
+                                       </padding>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </HBox>
+                                    <HBox fx:id="receiptsWrapperStackPane" onMouseClicked="#openReceiptPage" prefHeight="50.0" prefWidth="300.0">
+                                       <children>
+                                          <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="44.0" />
+                                          <StackPane alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="256.0">
+                                             <children>
+                                                <Label fx:id="receiptsButton" prefHeight="50.0" prefWidth="256.0" styleClass="side-menu-buttons" text="Label" />
+                                                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="256.0" styleClass="bottom-line" />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="3.0" top="3.0" />
+                                       </padding>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </HBox>
+                                    <HBox fx:id="costsWrapperStackPane" onMouseClicked="#openCostsPage" prefHeight="50.0" prefWidth="300.0">
+                                       <children>
+                                          <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="44.0" />
+                                          <StackPane alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="256.0">
+                                             <children>
+                                                <Label fx:id="costsButton" prefHeight="50.0" prefWidth="256.0" styleClass="side-menu-buttons" text="Label" />
+                                                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="256.0" styleClass="bottom-line" />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="3.0" top="3.0" />
+                                       </padding>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </HBox>
+                                    <HBox fx:id="waterListWrapperStackPane" onMouseClicked="#openWaterListPage" prefHeight="50.0" prefWidth="300.0">
+                                       <children>
+                                          <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="44.0" />
+                                          <StackPane alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="256.0">
+                                             <children>
+                                                <Label fx:id="waterListButton" prefHeight="50.0" prefWidth="256.0" styleClass="side-menu-buttons" text="Label" />
+                                                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" prefWidth="256.0" styleClass="bottom-line" />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="3.0" top="3.0" />
+                                       </padding>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Region VBox.vgrow="ALWAYS" />
+                              <VBox fx:id="houseInfoVBox" alignment="TOP_CENTER" prefWidth="300.0">
+                                 <children>
+                                    <Label fx:id="houseNameCity" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="15.0" prefWidth="300.0" styleClass="house" text="Long Street Address, City" />
+                                    <Label fx:id="postCode" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="15.0" prefWidth="300.0" styleClass="house" text="45 8GR" />
+                                    <Label fx:id="country" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="15.0" prefWidth="300.0" styleClass="house" text="Country" />
+                                    <Button fx:id="changeHouseButton" maxHeight="-Infinity" mnemonicParsing="false" onAction="#changeHouse" prefHeight="40.0" styleClass="change-house-button" text="Button">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="30.0" right="30.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <StackPane.margin>
+                              <Insets top="14.0" />
+                           </StackPane.margin>
+                           <styleClass>
+                              <String fx:value="sheet" />
+                              <String fx:value="first-sheet" />
+                           </styleClass>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

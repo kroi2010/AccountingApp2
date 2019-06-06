@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="container" prefHeight="700.0" prefWidth="800.0" styleClass="background" stylesheets="@styles/flatinfo.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.accounting.view.FlatInfoController">
+   <children>
+      <VBox fx:id="mainVBox" alignment="TOP_CENTER" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane maxHeight="100.0" VBox.vgrow="NEVER">
+               <children>
+                  <Region maxHeight="3.0" minHeight="3.0" styleClass="top-sign-color" StackPane.alignment="TOP_CENTER" />
+                  <HBox alignment="TOP_CENTER" maxHeight="100.0">
+                     <children>
+                        <Region maxHeight="20.0" minHeight="20.0" minWidth="20.0">
+                           <styleClass>
+                              <String fx:value="top-sign-sides" />
+                              <String fx:value="top-sign-color" />
+                              <String fx:value="left" />
+                           </styleClass>
+                        </Region>
+                        <Button fx:id="flatLabel" minHeight="40.0" mnemonicParsing="false" text="Button">
+                           <styleClass>
+                              <String fx:value="top-sign-color" />
+                              <String fx:value="top-sign" />
+                           </styleClass>
+                        </Button>
+                        <Region maxHeight="20.0" minHeight="20.0" minWidth="20.0">
+                           <styleClass>
+                              <String fx:value="top-sign-sides" />
+                              <String fx:value="top-sign-color" />
+                              <String fx:value="right" />
+                           </styleClass>
+                        </Region>
+                     </children>
+                     <StackPane.margin>
+                        <Insets top="3.0" />
+                     </StackPane.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="-30.0" right="-30.0" />
+               </VBox.margin></StackPane>
+            <Region minHeight="0.0" styleClass="test" VBox.vgrow="SOMETIMES" />
+            <HBox alignment="CENTER" VBox.vgrow="NEVER">
+               <children>
+                  <VBox fx:id="firstColumnVBox" maxWidth="700.0" prefWidth="300.0" spacing="30.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox maxWidth="1.7976931348623157E308" spacing="10.0">
+                           <children>
+                              <Label fx:id="nameLabel" styleClass="labels" text="Name" />
+                              <StackPane alignment="CENTER_RIGHT" maxHeight="30.0">
+                                 <children>
+                                    <TextField fx:id="nameTextField" prefHeight="30.0" styleClass="text_field" />
+                                    <Region maxHeight="30.0" maxWidth="30.0" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </VBox>
+                        <VBox maxWidth="1.7976931348623157E308" spacing="10.0">
+                           <children>
+                              <Label fx:id="surnameLabel" styleClass="labels" text="Surname" />
+                              <StackPane alignment="CENTER_RIGHT" maxHeight="30.0">
+                                 <children>
+                                    <TextField fx:id="surnameTextField" prefHeight="30.0" styleClass="text_field" />
+                                    <Region maxHeight="30.0" maxWidth="30.0" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </VBox>
+                        <HBox spacing="20.0">
+                           <children>
+                              <VBox maxWidth="1.7976931348623157E308" spacing="10.0" HBox.hgrow="SOMETIMES">
+                                 <children>
+                                    <Label fx:id="numberOfPeopleLabel" styleClass="labels" text="Number of People" />
+                                    <HBox maxHeight="30.0" styleClass="number-of-people-hbox">
+                                       <children>
+                                          <Region fx:id="lessPeopleButton" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" onMouseClicked="#decreasePeople" styleClass="minus-button" />
+                                          <TextField fx:id="numberOfPeopleTextField" maxWidth="1.7976931348623157E308" prefHeight="30.0" HBox.hgrow="SOMETIMES">
+                                             <styleClass>
+                                                <String fx:value="text_field" />
+                                                <String fx:value="centered" />
+                                                <String fx:value="number-of-people" />
+                                             </styleClass>
+                                          </TextField>
+                                          <Region fx:id="morePeopleButton" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" onMouseClicked="#increasePeople" styleClass="plus-button" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Region maxWidth="150.0" minWidth="50.0" HBox.hgrow="ALWAYS" />
+                              <VBox maxWidth="1.7976931348623157E308" spacing="10.0" HBox.hgrow="SOMETIMES">
+                                 <children>
+                                    <Label fx:id="areaSizeLabel" styleClass="labels" text="Area Size" />
+                                    <StackPane alignment="CENTER_RIGHT" maxHeight="30.0">
+                                       <children>
+                                          <TextField fx:id="areaSizeTextField" prefHeight="30.0">
+                                             <styleClass>
+                                                <String fx:value="text_field" />
+                                                <String fx:value="centered" />
+                                                <String fx:value="area-size" />
+                                             </styleClass>
+                                          </TextField>
+                                          <Label fx:id="areaMeasureLabel" ellipsisString="" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" text="Labeljlk" textAlignment="CENTER">
+                                             <StackPane.margin>
+                                                <Insets />
+                                             </StackPane.margin>
+                                          </Label>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+                  <Region fx:id="spaceRegion" maxWidth="100.0" minWidth="50.0" HBox.hgrow="ALWAYS" />
+                  <VBox fx:id="secondColumnVBox" maxWidth="500.0" minWidth="-Infinity" prefWidth="300.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox fx:id="mailVBox" maxWidth="1.7976931348623157E308" spacing="10.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label fx:id="mailLabel" styleClass="labels" text="Email" />
+                                    <HBox fx:id="mailNumberHBox" alignment="CENTER" spacing="10.0">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <Region fx:id="addMailButton" maxHeight="20.0" maxWidth="20.0" minHeight="15.0" minWidth="20.0" onMouseClicked="#addMail" styleClass="add-mail-icon">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Region>
+                                 </children>
+                              </HBox>
+                              <StackPane alignment="CENTER_RIGHT" maxHeight="30.0">
+                                 <children>
+                                    <TextField fx:id="mailTextField" prefHeight="30.0">
+                                       <styleClass>
+                                          <String fx:value="text_field" />
+                                          <String fx:value="mail" />
+                                       </styleClass></TextField>
+                                    <Region maxHeight="30.0" maxWidth="30.0">
+                                       <StackPane.margin>
+                                          <Insets right="35.0" />
+                                       </StackPane.margin></Region>
+                                    <Region maxHeight="30.0" maxWidth="30.0" onMouseClicked="#deleteMail" styleClass="delete-icon">
+                                       <StackPane.margin>
+                                          <Insets />
+                                       </StackPane.margin>
+                                    </Region>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </VBox>
+                        <CheckBox fx:id="sendMail" alignment="TOP_LEFT" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="30.0" text="Send mail" />
+                        <VBox fx:id="bankVBox" maxWidth="1.7976931348623157E308" spacing="10.0">
+                           <children>
+                              <Label fx:id="bankLabel" styleClass="labels" text="Bank" />
+                              <ScrollPane maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="90.0" prefWidth="300.0">
+                                 <content>
+                                    <VBox fx:id="availableBanksVBox" maxWidth="500.0" minWidth="-Infinity" prefWidth="300.0" spacing="15.0" />
+                                 </content>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Region maxHeight="50.0" minHeight="20.0" styleClass="test" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Region>
+            <VBox fx:id="messageContainer" alignment="TOP_CENTER" maxHeight="350.0" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox maxWidth="700.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="300.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="messageHeaderLabel" maxWidth="1.7976931348623157E308" styleClass="labels" text="Label" />
+                              <CheckBox fx:id="addOwnMessage" alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" text="Create your own message hj hjh hjh jh jhj jhj hjhjhjh jhhjh jh jh jh hjhh jh" wrapText="true" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                        <Region maxWidth="100.0" minWidth="50.0" HBox.hgrow="ALWAYS" />
+                        <VBox fx:id="messageVBox" maxWidth="500.0" prefWidth="300.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="languageLabel" styleClass="labels" text="Letter language" />
+                              <StackPane alignment="CENTER_RIGHT" maxHeight="30.0">
+                                 <children>
+                                    <ComboBox fx:id="languageComboBox" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="30.0" />
+                                    <Region maxHeight="30.0" maxWidth="30.0" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="messageTextArea" maxHeight="250.0" maxWidth="1280.0" minHeight="-Infinity" prefHeight="100.0" VBox.vgrow="SOMETIMES">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextArea>
+               </children>
+            </VBox>
+            <Region styleClass="test" VBox.vgrow="SOMETIMES" />
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="70.0" spacing="20.0" VBox.vgrow="NEVER">
+               <children>
+                  <Button fx:id="previousFlatButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#goToPreviousFlat" prefHeight="35.0" text="Button">
+                     <styleClass>
+                        <String fx:value="page" />
+                        <String fx:value="pagination-button" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <StackPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" styleClass="page">
+                     <children>
+                        <Circle fx:id="previousPagesButton" fill="DODGERBLUE" onMouseClicked="#viewPreviousFlats" radius="17.5" stroke="BLACK" strokeType="INSIDE" styleClass="background">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Circle>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="35.0" prefWidth="35.0" spacing="4.0" StackPane.alignment="CENTER">
+                           <children>
+                              <Circle fill="DODGERBLUE" radius="2.0" stroke="BLACK" strokeType="INSIDE" styleClass="pagination-dots" />
+                              <Circle fill="DODGERBLUE" radius="2.0" stroke="BLACK" strokeType="INSIDE" styleClass="pagination-dots" />
+                              <Circle fill="DODGERBLUE" radius="2.0" stroke="BLACK" strokeType="INSIDE" styleClass="pagination-dots" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="CLOSED_HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="-10.0" />
+                     </HBox.margin>
+                  </StackPane>
+                  <HBox fx:id="pageContainerHBox" alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" spacing="10.0" />
+                  <StackPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" styleClass="page">
+                     <children>
+                        <Circle fx:id="nextPagesButton" fill="DODGERBLUE" onMouseClicked="#viewNextFlats" radius="17.5" stroke="BLACK" strokeType="INSIDE" styleClass="background">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Circle>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="35.0" prefWidth="35.0" spacing="4.0" StackPane.alignment="CENTER">
+                           <children>
+                              <Circle fill="DODGERBLUE" radius="2.0" stroke="BLACK" strokeType="INSIDE" styleClass="pagination-dots" />
+                              <Circle fill="DODGERBLUE" radius="2.0" stroke="BLACK" strokeType="INSIDE" styleClass="pagination-dots" />
+                              <Circle fill="DODGERBLUE" radius="2.0" stroke="BLACK" strokeType="INSIDE" styleClass="pagination-dots" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="CLOSED_HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="-10.0" />
+                     </HBox.margin>
+                  </StackPane>
+                  <Button fx:id="nextFlatButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#goToNextFlat" prefHeight="35.0" text="Button">
+                     <styleClass>
+                        <String fx:value="page" />
+                        <String fx:value="pagination-button" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

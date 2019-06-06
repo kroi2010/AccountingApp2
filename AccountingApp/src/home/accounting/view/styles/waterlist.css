@@ -1,0 +1,79 @@
+.background{
+	-fx-background-color: #ffffff;
+}
+
+.table .text-field{
+	-fx-border-color: transparent;
+	-fx-border-width: 0;
+	-fx-border-radius: 0;
+	-fx-background-radius: 0;
+	-fx-alignment: center;
+	-fx-background-insets: 0, 1;
+	-fx-background-color: transparent;
+}
+
+.table .name{
+	-fx-padding: 0 0 0 10;
+}
+
+.table .even .name{
+	-fx-background-color: #ffffff;
+}
+
+.table .odd .name{
+	-fx-background-color: #efefef;
+}
+
+.table .even .current_value{
+	-fx-background-color: #ffffff;
+}
+
+.table .odd .current_value{
+	-fx-background-color: #e0e0e0;
+}
+
+.table-view .table-cell{
+	
+}
+
+.column-header-background{
+	-fx-cell-size: 50px;
+}
+
+.table-column{
+	-fx-alignment: center-left;
+}
+
+.table-row-cell:odd{
+  
+}
+
+.table-row-cell:odd .name{
+  	-fx-background-color: #ffffff;
+}
+
+.table-row-cell:even .name{ 
+	-fx-background-color: #efefef;
+}
+
+
+.table-row-cell:odd .current_value{
+  	-fx-background-color: #ffffff;
+}
+
+.table-row-cell:even .current_value{ 
+	-fx-background-color: #e0e0e0;
+}
+
+.table-row-cell:odd .old_value{
+  	-fx-background-color: #ffffff;
+}
+
+.table-row-cell:even .old_value{ 
+	-fx-background-color: #ffffff;
+}
+
+
+.table-row-cell:even{ 
+}
+

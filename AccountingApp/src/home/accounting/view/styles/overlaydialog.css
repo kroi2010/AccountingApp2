@@ -1,0 +1,46 @@
+.background{
+	-fx-background-color: rgba(0,0,0,0.7);
+}
+
+.dialog{
+	-fx-background-color: #fff;
+}
+
+.button{
+	-fx-background-color: #0b88d8;
+	-fx-background-radius: 10px;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 0 30 0 30;
+}
+
+.text-area{
+	-fx-font-size: 16px;
+	-fx-text-fill: #7d7d7d;
+	-fx-control-inner-background: white;
+	-fx-background-color: transparent;
+	}	
+
+.text-area .content{
+	-fx-background-color: white;
+}
+
+.text-area *.text{
+	-fx-text-alignment: center;
+}
+
+.text-area:focused{
+	-fx-focus-color: transparent; 
+	-fx-faint-focus-color: transparent;
+}
+
+.text-area > .scroll-pane{
+	-fx-vbar-policy: never;
+	-fx-hbar-policy: never;
+}
+
+#bindingText{
+	-fx-padding: 20px;
+}

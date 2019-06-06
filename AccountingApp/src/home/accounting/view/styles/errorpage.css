@@ -1,0 +1,29 @@
+.background{
+	-fx-background-color: #fff;
+}
+
+.button{
+	-fx-text-fill: #fff;
+	-fx-cursor: hand;
+	-fx-background-insets: 0, 1;
+	-fx-border-width: 0;
+	-fx-background-color: #e2185b;
+	-fx-background-radius: 10px;
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;
+	-fx-padding: 0 30 0 30;
+}
+
+.label{
+	-fx-text-fill: #848484;
+	-fx-font-weight: bold;
+	-fx-font-size: 23px;
+	-fx-alignment: center;
+	-fx-text-alignment: center;
+	-fx-wrap-text: true;
+	}
+	
+.page-transition{
+	-fx-stroke: none;
+	-fx-fill: #e2185b;
+}

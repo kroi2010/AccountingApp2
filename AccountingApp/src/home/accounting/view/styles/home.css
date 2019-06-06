@@ -1,0 +1,63 @@
+.background{
+	-fx-background-color: #fff;
+}
+
+.sticky-notes{
+	-fx-background-color: #ebeff3;
+}
+
+.house-name{
+	-fx-font-size: 30px;
+}
+
+.house-details{
+	-fx-font-size: 16px;
+}
+
+.button{
+	-fx-text-fill: #fff;
+	-fx-cursor: hand;
+	-fx-background-insets: 0, 1;
+	-fx-border-width: 0;
+}
+
+.register-house{
+	-fx-background-color: #e2185b;
+	-fx-background-radius: 10px;
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;
+	-fx-padding: 0 30 0 30;
+}
+
+.text-area .scroll-pane > .viewport{
+	-fx-background-color: transparent;
+}
+
+.text-area{
+   
+}
+
+.text-area .content{
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.date-label{
+	-fx-text-fill: #e2185b;
+	-fx-font-size: 70px;
+	-fx-padding: 0;
+	-fx-translate-y: -20px;
+}
+
+.day-label{
+	-fx-font-size: 14px;
+}
+
+.month-label{
+	-fx-text-fill: #e2185b;
+	-fx-font-size: 14px;
+	-fx-translate-y: -40px;
+	-fx-font-weight: bold;
+}

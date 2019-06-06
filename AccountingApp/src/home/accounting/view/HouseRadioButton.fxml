@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" prefHeight="50.0" prefWidth="500.0" stylesheets="@styles/usersettings.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.accounting.view.HouseRadioButtonController">
+   <children>
+      <Region styleClass="house-region" />
+      <RadioButton fx:id="radioButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="RadioButton" StackPane.alignment="CENTER_LEFT">
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <Button fx:id="deleteButton" maxHeight="-Infinity" mnemonicParsing="false" onAction="#deleteHouse" prefHeight="25.0" text="Button" StackPane.alignment="CENTER_RIGHT">
+         <StackPane.margin>
+            <Insets right="30.0" />
+         </StackPane.margin>
+         <padding>
+            <Insets left="15.0" right="15.0" />
+         </padding>
+      </Button>
+   </children>
+</StackPane>

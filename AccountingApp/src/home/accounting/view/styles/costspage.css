@@ -1,0 +1,23 @@
+.background{
+	-fx-background-color: #ffffff;
+}
+
+.labels{
+	-fx-font-size: 14px;
+	-fx-text-fill: #7d7d7d;
+	-fx-padding: 0 15px 0.0 0;
+}
+
+.text_field{
+	-fx-border-color: transparent transparent #7d7d7d transparent;
+	-fx-border-width: 0 0 1 0;
+	-fx-fill: transparent;
+	-fx-background-insets: 0, 1;
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+    -fx-padding: 0 30 0 0;
+}
+
+.text_field:focused{
+	-fx-border-color: transparent transparent #ff8a33 transparent;
+}

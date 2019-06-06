@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import home.accounting.controller.TextFieldPasteListener?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane styleClass="background" stylesheets="@styles/houseregistration.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.accounting.view.HouseRegistrationController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane fx:id="houseRegistrationScrollPane" fitToWidth="true" hbarPolicy="NEVER">
+               <content>
+                  <HBox alignment="CENTER" spacing="50.0">
+                     <children>
+                        <VBox fx:id="homeRegistrationRegion" alignment="TOP_CENTER" maxWidth="-Infinity" prefWidth="300.0" spacing="30.0">
+                           <children>
+                              <VBox prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="streetLabel" styleClass="labels" text="Street" />
+                                    <StackPane maxHeight="30.0">
+                                       <children>
+                                          <TextFieldPasteListener fx:id="street" minHeight="-Infinity" prefHeight="30.0" styleClass="text_field" />
+                                          <Region maxHeight="30.0" maxWidth="30.0" StackPane.alignment="CENTER_RIGHT" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                              <VBox prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="houseNumberLabel" styleClass="labels" text="House Number" />
+                                    <StackPane maxHeight="30.0">
+                                       <children>
+                                          <TextFieldPasteListener fx:id="houseNumber" prefHeight="30.0" styleClass="text_field" />
+                                          <Region maxHeight="30.0" maxWidth="30.0" StackPane.alignment="CENTER_RIGHT" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                              <VBox prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="cityLabel" styleClass="labels" text="City" />
+                                    <StackPane maxHeight="30.0">
+                                       <children>
+                                          <TextFieldPasteListener fx:id="city" prefHeight="30.0" styleClass="text_field" />
+                                          <Region maxHeight="30.0" maxWidth="30.0" StackPane.alignment="CENTER_RIGHT" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                              <VBox prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="countryLabel" styleClass="labels" text="Country" />
+                                    <StackPane maxHeight="30.0">
+                                       <children>
+                                          <TextFieldPasteListener fx:id="country" prefHeight="30.0" styleClass="text_field" />
+                                          <Region maxHeight="30.0" maxWidth="30.0" StackPane.alignment="CENTER_RIGHT" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="280.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="postCodeLabel" styleClass="labels" text="Post Code" />
+                                    <StackPane maxHeight="30.0">
+                                       <children>
+                                          <TextFieldPasteListener fx:id="postCode" prefHeight="30.0" styleClass="text_field" />
+                                          <Region maxHeight="30.0" maxWidth="30.0" StackPane.alignment="CENTER_RIGHT" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="370.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="flatNumberLabel" styleClass="labels" text="Number of Flats" />
+                                    <StackPane maxHeight="30.0">
+                                       <children>
+                                          <TextFieldPasteListener fx:id="numberOfFlats" prefHeight="30.0" styleClass="text_field" />
+                                          <Region maxHeight="30.0" maxWidth="30.0" StackPane.alignment="CENTER_RIGHT" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="bankRegistrationRegion" maxWidth="-Infinity" prefWidth="300.0" spacing="30.0">
+                           <children>
+                              <VBox fx:id="bankContainer" spacing="30.0">
+                                 <children>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefWidth="100.0" spacing="10.0">
+                                             <children>
+                                                <Label fx:id="bankLabel" styleClass="labels" text="Bank" />
+                                                <StackPane maxHeight="30.0">
+                                                   <children>
+                                                      <TextFieldPasteListener prefHeight="30.0">
+                                                         <styleClass>
+                                                            <String fx:value="text_field" />
+                                                            <String fx:value="bank-name" />
+                                                         </styleClass>
+                                                      </TextFieldPasteListener>
+                                                      <Region maxHeight="30.0" maxWidth="30.0" StackPane.alignment="CENTER_RIGHT" />
+                                                   </children>
+                                                </StackPane>
+                                                <Label fx:id="bankNumberLabel" styleClass="labels" text="Bank Number">
+                                                   <VBox.margin>
+                                                      <Insets top="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <StackPane maxHeight="30.0">
+                                                   <children>
+                                                      <TextFieldPasteListener prefHeight="30.0">
+                                                         <styleClass>
+                                                            <String fx:value="text_field" />
+                                                            <String fx:value="bank-number" />
+                                                         </styleClass>
+                                                      </TextFieldPasteListener>
+                                                      <Region maxHeight="30.0" maxWidth="30.0" StackPane.alignment="CENTER_RIGHT" />
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                              <AnchorPane maxHeight="-Infinity" prefHeight="60.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="addBankButton" maxWidth="300.0" minWidth="150.0" mnemonicParsing="false" onAction="#addBank" prefHeight="40.0" styleClass="registration_button" text="Button translation broke=)" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <padding>
+                                          <Insets left="30.0" right="30.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <VBox spacing="10.0">
+                                 <children>
+                                    <Label fx:id="currencyLabel" styleClass="labels" text="Currency" />
+                                    <ComboBox fx:id="currenciesComboBox" maxWidth="1.7976931348623157E308" prefHeight="30.0" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="10.0">
+                                 <children>
+                                    <Label fx:id="documentationLanguageLabel" styleClass="labels" text="Documentation Language:" />
+                                    <ComboBox fx:id="languagesComboBox" maxWidth="1.7976931348623157E308" prefHeight="30.0" />
+                                    <CheckBox fx:id="surnameFirst" mnemonicParsing="false" styleClass="labels" text="Start with Surname" wrapText="true">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <CheckBox fx:id="cutName" mnemonicParsing="false" styleClass="labels" text="Show only first letter of flat owner name (e.g. J. Winter)" wrapText="true">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+            <Region maxHeight="100.0" VBox.vgrow="SOMETIMES" />
+            <FlowPane fx:id="buttonFlowPane" alignment="CENTER_RIGHT" columnHalignment="CENTER" hgap="10.0" maxWidth="1000.0">
+               <children>
+                  <Button fx:id="readyButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#homeRegistration" prefHeight="40.0" prefWidth="150.0" styleClass="registration_button" text="Ready">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="skipButton" mnemonicParsing="false" onAction="#skipHomeRegistration" prefHeight="40.0" prefWidth="150.0" styleClass="not_active_button" text="Skip">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelHomeRegistration" prefHeight="40.0" prefWidth="150.0" styleClass="not_active_button" text="Button" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" top="15.0" />
+               </padding>
+            </FlowPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

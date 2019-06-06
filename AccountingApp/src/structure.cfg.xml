@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:src/home/accounting/DB/check/structure/Accounting.sqlite</property>
+        <property name="hibernate.connection.username"></property>
+        <property name="hibernate.connection.password"></property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="hibernate.connection.pool_size">1</property>
+
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLiteDialect</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="hibernate.cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="hibernate.show_sql">false</property>
+        
+        <property name="hibernate.format_sql">false</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hibernate.hbm2ddl.auto">none</property>
+
+        <!-- Names the annotated entity class -->
+        <mapping class="home.accounting.model.Accountant"/>
+        <mapping class="home.accounting.model.LogInfo"/>
+        <mapping class="home.accounting.model.Bank"/>
+        <mapping class="home.accounting.model.Costs"/>
+        <mapping class="home.accounting.model.Currency"/>
+        <mapping class="home.accounting.model.Flat"/>
+        <mapping class="home.accounting.model.FlatBank"/>
+        <mapping class="home.accounting.model.House"/>
+        <mapping class="home.accounting.model.Languages"/>
+		<mapping class="home.accounting.model.Mail"/>
+		<mapping class="home.accounting.model.Receipt"/>
+		<mapping class="home.accounting.model.ReceiptUsedBank"/>
+		<mapping class="home.accounting.model.SendingHistory"/>
+		<mapping class="home.accounting.model.UsedBank"/>
+		<mapping class="home.accounting.model.Water"/>
+		
+    </session-factory>
+
+</hibernate-configuration>

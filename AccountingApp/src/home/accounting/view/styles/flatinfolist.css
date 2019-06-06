@@ -1,0 +1,35 @@
+.background{
+	-fx-background-color: #ffffff;
+}
+
+.outer-circle{
+	-fx-background-color: #ffc6d9;
+	-fx-background-radius: 25px;
+}
+.page{
+	-fx-fill: #fff;
+	-fx-stroke: none;
+	-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 3);
+}
+.page.selected{
+	-fx-fill: #e2185b;
+}
+
+.pagination-button{
+	-fx-background-color: #ff8a33;
+	-fx-background-radius: 25px;
+	-fx-padding: 0 15px 0 15px;
+	-fx-text-fill: #fff;
+	-fx-font-weight: bold;
+	-fx-effect: none;
+}
+
+.geyed-out{
+	-fx-opacity: 0.5;
+	-fx-cursor: default;
+}
+
+.ready{
+	-fx-background-color: #4fc14c;
+	-fx-background-radius: 50%;
+}

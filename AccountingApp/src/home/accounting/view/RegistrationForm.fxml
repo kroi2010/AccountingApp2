@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import home.accounting.controller.TextFieldPasteListener?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" styleClass="background" stylesheets="@styles/registration.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.accounting.view.RegistrationFormController">
+   <children>
+      <GridPane fx:id="grid" scaleShape="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Region fx:id="whiteBackground" prefHeight="200.0" prefWidth="200.0" styleClass="background" GridPane.columnSpan="12" GridPane.rowSpan="20" />
+            <VBox fx:id="userForm" alignment="CENTER" spacing="30.0" GridPane.columnSpan="12" GridPane.rowSpan="20">
+               <children>
+                  <HBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0">
+                     <children>
+                        <Label styleClass="login-stroke" text="---------" textOverrun="CLIP" HBox.hgrow="NEVER" />
+                        <Label fx:id="loginLabel" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" onMouseClicked="#showLoginForm" styleClass="login-label" text="Label" HBox.hgrow="ALWAYS" />
+                        <Label styleClass="login-stroke" text="---------" textOverrun="CLIP" HBox.hgrow="NEVER" />
+                     </children>
+                  </HBox>
+                  <VBox fx:id="userRegistrationRegion" maxWidth="-Infinity" prefWidth="300.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="nameLabel" styleClass="labels" text="Name" />
+                        <StackPane alignment="CENTER_RIGHT" maxHeight="30.0">
+                           <children>
+                              <TextFieldPasteListener fx:id="name" prefHeight="30.0" styleClass="text_field" />
+                              <Region maxHeight="30.0" maxWidth="30.0" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+                  <VBox maxWidth="-Infinity" prefWidth="300.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="lastNameLabel" styleClass="labels" text="Last Name" />
+                        <StackPane alignment="CENTER_RIGHT" maxHeight="30.0">
+                           <children>
+                              <TextFieldPasteListener fx:id="lastName" prefHeight="30.0" styleClass="text_field" />
+                              <Region maxHeight="30.0" maxWidth="30.0" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+                  <VBox maxWidth="-Infinity" prefWidth="300.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="phoneNumberLabel" styleClass="labels" text="Phone Number" />
+                        <StackPane alignment="CENTER_RIGHT" maxHeight="30.0">
+                           <children>
+                              <TextFieldPasteListener fx:id="phoneNumber" prefHeight="30.0" styleClass="text_field" />
+                              <Region maxHeight="30.0" maxWidth="30.0" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+                  <VBox maxWidth="-Infinity" prefWidth="300.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="mailLabel" styleClass="labels" text="Email" />
+                        <StackPane alignment="CENTER_RIGHT" maxHeight="30.0">
+                           <children>
+                              <TextFieldPasteListener fx:id="mail" prefHeight="30.0" styleClass="text_field" />
+                              <Region maxHeight="30.0" maxWidth="30.0" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+                  <FlowPane alignment="TOP_RIGHT" columnHalignment="RIGHT" maxWidth="-Infinity" prefWidth="300.0">
+                     <children>
+                        <Button fx:id="regButton" mnemonicParsing="false" onAction="#showAddHomeForm" prefHeight="40.0" prefWidth="150.0" styleClass="registration_button" text="This app just broke">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+            <VBox fx:id="loginVBox" alignment="CENTER" spacing="30.0" visible="false" GridPane.columnSpan="12" GridPane.rowSpan="20">
+               <children>
+                  <VBox fx:id="userRegistrationRegion1" maxWidth="-Infinity" prefWidth="300.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="accountantNameLabel" styleClass="labels" text="Name" />
+                        <StackPane alignment="CENTER_RIGHT" maxHeight="30.0">
+                           <children>
+                              <ComboBox fx:id="userComboBox" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="30.0" />
+                              <Region maxHeight="30.0" maxWidth="30.0" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="passwordVBox" maxWidth="-Infinity" prefWidth="300.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="passwordLabel" styleClass="labels" text="Last Name" />
+                        <StackPane alignment="CENTER_RIGHT" maxHeight="30.0">
+                           <children>
+                              <PasswordField maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="30.0" />
+                              <Region maxHeight="30.0" maxWidth="30.0" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+                  <FlowPane alignment="TOP_RIGHT" columnHalignment="RIGHT" maxWidth="-Infinity" prefWidth="300.0">
+                     <children>
+                        <Button fx:id="loginButton" mnemonicParsing="false" onAction="#userLogin" prefHeight="40.0" prefWidth="150.0" styleClass="registration_button" text="This app just broke">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+            <Label fx:id="languageLabel" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" styleClass="labels" text="Language: " textAlignment="RIGHT" GridPane.columnSpan="3" GridPane.halignment="LEFT" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
+            <HBox fx:id="interfaceLanguage" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="3" GridPane.columnSpan="9" GridPane.halignment="LEFT" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            <StackPane fx:id="imageStack" prefHeight="700.0" prefWidth="400.0" GridPane.columnIndex="12" GridPane.columnSpan="8" GridPane.rowSpan="20">
+               <children>
+                  <Region styleClass="floating_region" />
+               </children>
+            </StackPane>
+            <Label fx:id="houseRegistrationLabel" styleClass="floating_text" text="House Registration" textFill="WHITE" GridPane.columnIndex="3" GridPane.columnSpan="17" GridPane.rowSpan="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

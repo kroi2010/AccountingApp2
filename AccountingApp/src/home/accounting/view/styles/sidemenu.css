@@ -1,0 +1,79 @@
+.background{
+	
+	pink-background:  #e2185b;
+	grey-background: #353535;
+	/*derive example: -fx-text-fill: derive(-style1-color, -50%); */
+	gradient-color: radial-gradient(focus-angle 0deg, focus-distance 0%, center 290px 300px, radius 500px, #ffb06a 0%, #cc3671 50%, #3f003a 100%);
+	/*radial-gradient(focus-angle 45deg, focus-distance 20%, center 25% 25%, radius 50%, reflect, gray, darkgray 75%, dimgray) */
+	inner-shadow: linear-gradient(from 0% 50% to 100% 50%, transparent 90%, rgba(0,0,0,0.02) 94%, rgba(0,0,0,0.05) 96%, rgba(0,0,0,0.1) 98%, rgba(0,0,0,0.2) 100%);
+	-fx-background-color: gradient-color, inner-shadow;
+}
+
+.sheet{
+	-fx-background-color: #fff;
+	-fx-background-radius: 15px 15px 0 0;
+}
+
+.first-sheet{
+	inner-shadow: linear-gradient(from 0% 50% to 100% 50%, transparent 90%, rgba(0,0,0,0.02) 94%, rgba(0,0,0,0.05) 96%, rgba(0,0,0,0.1) 98%, rgba(0,0,0,0.2) 100%);
+	-fx-background-color: white, inner-shadow;
+}
+
+.second-sheet{
+	-fx-opacity: 0.7;
+}
+
+.third-sheet{
+	-fx-opacity: 0.3;
+}
+
+.button{
+	-fx-text-fill: #fff;
+	-fx-cursor: hand;
+	-fx-background-insets: 0, 1;
+	-fx-border-width: 0;
+}
+
+.change-house-button{
+	-fx-background-color: #e2185b;
+	-fx-background-radius: 10px 10px 0 0;
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;
+}
+
+.side-menu-buttons{
+	-fx-font-size: 16px;
+	-fx-background-radius: 0;
+	-fx-alignment: center-left;
+	-fx-text-fill: #898989;
+	/*-fx-font-weight: bold;*/
+}
+
+.selected .side-menu-buttons{
+	-fx-text-fill: #353535;
+}
+
+.bottom-line{
+	-fx-background-color: #e2185b;
+	-fx-background-radius: 0;
+}
+
+.picture-frame{
+	-fx-fill: #fff;
+	-fx-stroke: transparent;
+}
+
+.name{
+	-fx-text-fill: #fff;
+	-fx-font-size: 18px;
+	-fx-label-padding: -5 0 0 0;
+}
+
+.house{
+	-fx-text-fill: #515151;
+	-fx-font-size: 14px;
+}
+
+.side-menu-buttons:hover{
+	
+}
